@@ -56,3 +56,8 @@
 2026-06-14 15:45:52.558 [trace] Scanned user extensions: 3
 2026-06-14 15:45:52.562 [trace] AbstractMcpResourceManagementService#populateLocalServers file:///home/codespace/.vscode-remote/data/User/mcp.json
 2026-06-14 15:45:52.564 [info] Log level changed to info
+2026-06-14 16:07:28.576 [info] [127.0.0.1][8c3e5340][ManagementConnection] New connection established.
+2026-06-14 16:07:28.579 [info] [127.0.0.1][d46f780a][ExtensionHostConnection] New connection established.
+2026-06-14 16:07:28.585 [info] [127.0.0.1][d46f780a][ExtensionHostConnection] <12477> Launched Extension Host Process.
+2026-06-14 16:07:28.844 [info] [127.0.0.1][d46f780a][ExtensionHostConnection] <12477> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
