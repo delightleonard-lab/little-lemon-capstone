@@ -1,0 +1,2 @@
+2026-06-13 21:42:57.482 [info] [McpGatewayService] Initialized
+2026-06-13 21:53:03.628 [info] [McpGateway][Channel] Client disconnected: [object Object], cleaning up gateways

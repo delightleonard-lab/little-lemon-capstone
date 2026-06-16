@@ -1,0 +1,5 @@
+2026-06-13 21:44:29.904 [info] Extension host with pid 2264 started
+2026-06-13 21:44:29.944 [info] Lock '/home/codespace/.vscode-remote/data/User/workspaceStorage/7ccacfc4/vscode.lock': Lock acquired.
+2026-06-13 21:53:03.516 [info] Extension host terminating: renderer disconnected for too long (2)
+2026-06-13 21:53:03.517 [info] Lock '/home/codespace/.vscode-remote/data/User/workspaceStorage/7ccacfc4/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2026-06-13 21:53:03.518 [info] Extension host with pid 2264 exiting with code 0

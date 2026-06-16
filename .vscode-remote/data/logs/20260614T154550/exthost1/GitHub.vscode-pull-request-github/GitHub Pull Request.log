@@ -1,0 +1,46 @@
+2026-06-14 15:46:34.623 [warning] /home/codespace/.ssh/config: ENOENT: no such file or directory, open '/home/codespace/.ssh/config'
+2026-06-14 15:46:34.623 [info] [Activation] Extension version: 0.148.0
+2026-06-14 15:46:46.865 [info] [Authentication] Creating hub for .com
+2026-06-14 15:46:50.277 [info] [Activation] Registering built in git provider.
+2026-06-14 15:46:50.277 [info] [Activation] Looking for git repository
+2026-06-14 15:46:50.277 [info] [Activation] Found 0 repositories during activation
+2026-06-14 15:46:50.277 [info] [Activation] Git repository found, initializing review manager and pr tree view.
+2026-06-14 15:46:50.287 [info] [GitAPI] Registering git provider
+2026-06-14 15:46:50.287 [info] [Review+0] Validate state in progress
+2026-06-14 15:46:50.288 [info] [Review+0] Validating state...
+2026-06-14 15:46:51.795 [info] [FolderRepositoryManager+0] Found GitHub remote for folder /workspaces/little-lemon-capstone
+2026-06-14 15:46:53.628 [info] [GitPostCommitCommands] Trying to register post commit commands.
+2026-06-14 15:46:53.628 [info] [GitPostCommitCommands] GitHub remote(s) found, registering post commit commands.
+2026-06-14 15:46:53.628 [info] [GitPostCommitCommands] Looking for remote. Comparing 1 local repo remotes with 1 GitHub repositories.
+2026-06-14 15:46:53.628 [info] [GitPostCommitCommands] Found a repo when getting post commit commands.
+2026-06-14 15:46:53.628 [info] [GitPostCommitCommands] Looking for remote. Comparing 1 local repo remotes with 1 GitHub repositories.
+2026-06-14 15:46:53.628 [info] [GitPostCommitCommands] Found a repo when getting post commit commands.
+2026-06-14 15:46:53.956 [info] [FolderRepositoryManager+0] Trying to use globalState for assignableUsers.
+2026-06-14 15:46:53.987 [info] [Review+0] No matching pull request metadata found locally for current branch main
+2026-06-14 15:46:55.821 [info] [Review+0] No matching pull request metadata found on GitHub for current branch main
+2026-06-14 15:46:56.961 [info] [FolderRepositoryManager+0] Using globalState assignableUsers for 1.
+2026-06-14 15:51:50.287 [info] [Review+0] Polling for state change...
+2026-06-14 15:51:50.287 [info] [Review+0] Validate state in progress
+2026-06-14 15:51:50.287 [info] [Review+0] Validating state...
+2026-06-14 15:51:50.404 [info] [FolderRepositoryManager+0] Found GitHub remote for folder /workspaces/little-lemon-capstone
+2026-06-14 15:51:50.404 [info] [FolderRepositoryManager+0] Using in-memory cached assignable users.
+2026-06-14 15:51:50.412 [info] [Review+0] No matching pull request metadata found locally for current branch main
+2026-06-14 15:51:51.275 [info] [Review+0] No matching pull request metadata found on GitHub for current branch main
+2026-06-14 15:56:52.110 [info] [Review+0] Polling for state change...
+2026-06-14 15:56:52.110 [info] [Review+0] Validate state in progress
+2026-06-14 15:56:52.110 [info] [Review+0] Validating state...
+2026-06-14 15:56:53.217 [info] [FolderRepositoryManager+0] Found GitHub remote for folder /workspaces/little-lemon-capstone
+2026-06-14 15:56:53.218 [info] [FolderRepositoryManager+0] Using in-memory cached assignable users.
+2026-06-14 15:56:53.225 [info] [Review+0] No matching pull request metadata found locally for current branch main
+2026-06-14 15:56:54.256 [info] [Review+0] No matching pull request metadata found on GitHub for current branch main
+2026-06-14 16:01:54.587 [info] [Review+0] Polling for state change...
+2026-06-14 16:01:54.587 [info] [Review+0] Validate state in progress
+2026-06-14 16:01:54.587 [info] [Review+0] Validating state...
+2026-06-14 16:01:54.705 [info] [FolderRepositoryManager+0] Found GitHub remote for folder /workspaces/little-lemon-capstone
+2026-06-14 16:01:54.706 [info] [FolderRepositoryManager+0] Using in-memory cached assignable users.
+2026-06-14 16:01:54.716 [info] [Review+0] No matching pull request metadata found locally for current branch main
+2026-06-14 16:01:55.642 [info] [Review+0] No matching pull request metadata found on GitHub for current branch main
+2026-06-14 16:06:55.974 [info] [Review+0] Polling for state change...
+2026-06-14 16:06:55.974 [info] [Review+0] Validate state in progress
+2026-06-14 16:06:55.974 [info] [Review+0] Validating state...
+2026-06-14 16:08:55.974 [error] [Review+0] Timeout occurred while validating state.
