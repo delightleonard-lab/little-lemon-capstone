@@ -16,7 +16,8 @@
         "vscode": {
             "extensions": [
                 "shardulm94.trailing-spaces",
-                "Codeium.codeium"
+                "Codeium.codeium",
+                "esbenp.prettier-vscode"
             ]
         }
     }
