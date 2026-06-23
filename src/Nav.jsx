@@ -1,18 +1,26 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from './assets/logo.png'; // Confirm this file name matches your sidebar exactly
 
 function Nav() {
-    return (
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#reservations">Reservations</a></li>
-                <li><a href="#order">Order Online</a></li>
-                <li><a href="#login">Login</a></li>
-            </ul>
-        </nav>
-    );
+  return (
+    <nav className="nav-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1rem 10%', background: '#FFFFFF' }}>
+      {/* Exactly one logo wrapper with restricted constraints */}
+      <div className="logo-container">
+        <Link to="/">
+          <img
+            src={logo}
+            alt="Little Lemon Logo"
+            style={{ height: '50px', width: 'auto', display: 'block' }}
+          />
+        </Link>
+      </div>
+
+      <ul style={{ display: 'flex', gap: '2rem', listStyle: 'none', margin: 0, padding: 0 }}>
+        <li><Link to="/" style={{ textDecoration: 'none', color: '#495E57', fontWeight: 'bold' }}>Home</Link></li>
+        <li><Link to="/reservations" style={{ textDecoration: 'none', color: '#495E57', fontWeight: 'bold' }}>Reservations</Link></li>
+      </ul>
+    </nav>
+  );
 }
 
 export default Nav;

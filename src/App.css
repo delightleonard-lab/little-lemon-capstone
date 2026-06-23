@@ -1,178 +1,160 @@
-/* ==========================================
-   1. BRAND VARIABLES & BASE SETUP
-   ========================================== */
 :root {
   --primary-green: #495E57;
   --primary-yellow: #F4CE14;
-  --secondary-orange: #EE9972;
-  --light-cream: #FBDABB;
-  --light-gray: #EDEFEE;
-  --dark-gray: #333333;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  --highlight-light: #EDEFEE;
+  --highlight-dark: #333333;
 }
 
 body {
+  margin: 0;
   font-family: 'Karla', sans-serif;
-  color: var(--dark-gray);
-  background-color: #ffffff;
-  line-height: 1.5;
 }
 
-/* Typography Defaults */
-h1, h2, h3, h4 {
-  font-family: 'Markazi Text', serif;
-  font-weight: 700;
-  color: var(--primary-green);
-}
-
-/* ==========================================
-   2. MACRO LAYOUT (CSS Grid Structure)
-   ========================================== */
-#root {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
-  grid-template-columns: 1fr;
-  min-height: 100vh;
-}
-
-/* Assign components to their specific grid track coordinates */
-header { grid-area: header; }
-nav    { grid-area: nav; }
-main   { grid-area: main; }
-footer { grid-area: footer; }
-
-/* ==========================================
-   3. COMPONENT INTERIORS (Flexbox Alignment)
-   ========================================== */
-
-/* Header & Brand Area */
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem 1rem;
-  background-color: #ffffff;
-}
-
-header .logo {
-  height: 50px;
-  object-fit: contain;
-}
-
-/* Navigation Bar */
-nav {
-  background-color: var(--light-gray);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-nav ul li {
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: var(--primary-green);
-  font-weight: 700;
-  font-size: 1.1rem;
-  transition: color 0.2s ease;
-}
-
-nav ul li a:hover {
-  color: var(--secondary-orange);
-}
-
-/* Main Content Surface */
-main {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-/* Hero Section */
-main h1 {
-  font-size: 3.5rem;
-  margin-bottom: 0.5rem;
-}
-
-main p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin-bottom: 1.5rem;
-}
-
-/* Call to Action Buttons */
-button {
-  background-color: var(--primary-yellow);
-  color: var(--dark-gray);
-  font-family: 'Karla', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.1s ease, background-color 0.2s ease;
-}
-
-button:hover {
-  background-color: #e5be10;
-}
-
-button:active {
-  transform: scale(0.98);
-}
-
-/* Footer Section */
-footer {
+/* Hero Section layout styling */
+.hero-section {
   background-color: var(--primary-green);
-  color: var(--light-gray);
-  padding: 2rem 1rem;
-  margin-top: auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10%;
+}
+
+.hero-content h1 {
+  font-family: 'Markazi Text', serif;
+  font-size: 4rem;
+  color: var(--primary-yellow);
+  margin: 0;
+}
+
+.hero-image-container img {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  transform: translateY(40px);
+}
+
+/* Action button configurations */
+.action-button {
+  background-color: var(--primary-yellow);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Specials Section layout styling */
+.specials-section {
+  padding: 6rem 10% 2rem;
+}
+
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.specials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.menu-card {
+  background-color: var(--highlight-light);
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 0;
+}
+
+.card-price {
+  color: #EE9972;
+  font-weight: bold;
+}
+
+.menu-card p {
+  padding: 0 1rem;
+  color: #495E57;
+  flex-grow: 1;
+}
+
+.delivery-button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  text-align: left;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+/* Testimonials section layout styling */
+.testimonials-section {
+  background-color: #D9D9D9;
+  padding: 4rem 10%;
   text-align: center;
 }
 
-/* ==========================================
-   4. RESPONSIVENESS (Desktop Upgrades)
-   ========================================== */
-@media (min-width: 768px) {
-  /* Transition the header and nav into a unified horizontal row on desktop views */
-  #root {
-    grid-template-areas:
-      "header nav"
-      "main main"
-      "footer footer";
-    grid-template-columns: auto 1fr;
-  }
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
 
-  header {
-    padding: 1rem 2rem;
-  }
+.testimonial-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  text-align: left;
+}
 
-  nav ul {
-    justify-content: flex-end;
-    padding: 1rem 2rem;
-  }
+/* About Section layout styling */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 10%;
+  gap: 4rem;
+}
+
+.about-images {
+  position: relative;
+  width: 400px;
+  height: 350px;
+}
+
+.about-images img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  position: absolute;
+}
+
+.image-back {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.image-front {
+  top: 50px;
+  left: 120px;
+  z-index: 2;
 }
